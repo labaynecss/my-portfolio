@@ -1,0 +1,186 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  body {
+    @apply font-body  leading-6 bg-gray-200;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-gray-800 font-primary;
+  }
+  p {
+    @apply text-white;
+  }
+  .section {
+    @apply py-10 lg:py-16;
+  }
+  .section-title {
+    @apply text-3xl lg:text-4xl font-medium lg:font-extrabold py-4;
+  }
+  .subtitle {
+    @apply text-base  mb-16 lg:mb-24 max-w-[520px];
+  }
+  .btn {
+    @apply py-4 px-7 font-medium bg-blue-900 text-white flex items-center justify-center rounded-sm  transition-all;
+  }
+  .input {
+    @apply h-[50px] outline-none pl-10 w-full font-body text-[15px] rounded-sm focus:outline focus:outline-1 border-gray-300 border-2;
+  }
+  .textarea {
+    @apply resize-none w-full outline-none p-6 rounded-sm h-[200px] focus:outline focus:outline-1 border-gray-300 border-2;
+  }
+  .header {
+    @apply items-center fixed top-0 w-full text-blue-100 z-10 h-[80px] flex;
+  }
+  .navbar {
+    @apply bg-transparent;
+  }
+  .active {
+    @apply shadow-[#6699CC] shadow-md;
+  }
+}
+
+@keyframes bubble-pixel {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.person {
+  border-radius: 50%;
+  box-shadow: 0px 0px 20px -4px rgba(216, 23, 184, 0.975);
+  image-rendering: pixelated;
+  animation: bubble-pixel 2s infinite;
+}
+
+.press-start {
+  font-family: 'Press Start 2P', cursive;
+}
+
+.bubbles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+.bubble {
+  position: absolute;
+  bottom: -100px;
+  width: 40px;
+  height: 40px;
+  background: #6699cc;
+  box-shadow: 0px 4px 9px -4px #050405;
+  border-radius: 50%;
+  opacity: 0.5;
+  animation: rise 10s infinite ease-in;
+}
+.bubble:nth-child(1) {
+  width: 40px;
+  height: 40px;
+  left: 10%;
+  animation-duration: 8s;
+}
+.bubble:nth-child(2) {
+  width: 20px;
+  height: 20px;
+  left: 20%;
+  animation-duration: 5s;
+  animation-delay: 1s;
+}
+.bubble:nth-child(3) {
+  width: 50px;
+  height: 50px;
+  left: 35%;
+  animation-duration: 7s;
+  animation-delay: 2s;
+}
+.bubble:nth-child(4) {
+  width: 80px;
+  height: 80px;
+  left: 50%;
+  animation-duration: 11s;
+  animation-delay: 0s;
+}
+.bubble:nth-child(5) {
+  width: 35px;
+  height: 35px;
+  left: 55%;
+  animation-duration: 6s;
+  animation-delay: 1s;
+}
+.bubble:nth-child(6) {
+  width: 45px;
+  height: 45px;
+  left: 65%;
+  animation-duration: 8s;
+  animation-delay: 3s;
+}
+.bubble:nth-child(7) {
+  width: 90px;
+  height: 90px;
+  left: 70%;
+  animation-duration: 12s;
+  animation-delay: 2s;
+}
+.bubble:nth-child(8) {
+  width: 25px;
+  height: 25px;
+  left: 80%;
+  animation-duration: 6s;
+  animation-delay: 2s;
+}
+.bubble:nth-child(9) {
+  width: 15px;
+  height: 15px;
+  left: 70%;
+  animation-duration: 5s;
+  animation-delay: 1s;
+}
+.bubble:nth-child(10) {
+  width: 90px;
+  height: 90px;
+  left: 25%;
+  animation-duration: 10s;
+  animation-delay: 4s;
+}
+@keyframes rise {
+  0% {
+    bottom: -100px;
+    transform: translateX(0);
+  }
+  50% {
+    transform: translate(100px);
+  }
+  100% {
+    bottom: 1080px;
+    transform: translateX(-200px);
+  }
+}
+
+.hover\:pointer-up:hover {
+  cursor: pointer;
+  transform: translateY(-10px);
+}
+.hover\:pointer-right:hover {
+  cursor: pointer;
+  transform: translateX(-3px);
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: white;
+}
