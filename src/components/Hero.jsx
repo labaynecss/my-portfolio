@@ -34,7 +34,7 @@ export const Hero = () => {
         <div className="container mx-auto h-screen flex justify-center ">
           <motion.div
             className="context-wrapper flex items-center "
-            initial={{ opacity: 0, scale: 0.3 }}
+            initial={{ opacity: 0, scale: 0.2 }}
             animate={animation}>
             <div className="flex pt-[5rem]">
               <div className="flex flex-col items-center lg:item-center text-lg ">

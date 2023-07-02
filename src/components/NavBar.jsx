@@ -12,7 +12,6 @@ export const NavBar = () => {
               key={index}>
               <Link
                 to={items.href}
-                activeClass="active"
                 spy={true}
                 smooth={true}
                 duration={400}

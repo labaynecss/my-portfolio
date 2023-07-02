@@ -49,7 +49,7 @@ export const Contact = () => {
           initial={{ opacity: 0, scale: 0.5 }}
           animate={animation}>
           <div className="flex flex-col lg:gap-x-8 lg:flex-row ">
-            <div class="flex flex-col h-[600px] lg:w-[560px]  w-auto my-5 rounded-b-md shadow-lg items-center ">
+            <div class="flex flex-col h-[620px] lg:w-[560px]  w-auto my-5 rounded-b-md shadow-lg items-center ">
               <img
                 src={me}
                 alt="me"
@@ -74,7 +74,7 @@ export const Contact = () => {
                 <Socials />
               </span>
             </div>
-            <div className="  my-5 flex flex-col justify-center h-[600px] px-4 rounded-b-md shadow-lg">
+            <div className="  my-5 flex flex-col justify-center h-[620px] px-4 rounded-b-md shadow-lg">
               <form
                 className="space-y-8  w-full max-w-[750px] "
                 onSubmit={sendEmail}>
@@ -102,7 +102,7 @@ export const Contact = () => {
                   onChange={(e) => setSubject(e.target.value)}
                 />
                 <textarea
-                  className="textarea"
+                  className="textarea h-[200px]"
                   placeholder="Your Message"
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}

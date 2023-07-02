@@ -41,7 +41,7 @@
     @apply bg-transparent;
   }
   .active {
-    @apply shadow-[#6699CC] shadow-md;
+    @apply shadow-[#6699CC] shadow-md px-2 rounded-md;
   }
 }
 
