@@ -49,7 +49,7 @@ export const Hero = () => {
                     A React Developer
                   </h1>
                   <p className="capitalize text-gray-700 pb-3 text-sm">
-                    Specialized in building your exceptional web designs
+                    Specialized in building your exceptional web applications
                   </p>
 
                   <div className="flex items-center justify-between max-w-[330px] m-auto py-4 px-1 ">
