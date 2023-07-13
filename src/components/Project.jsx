@@ -3,19 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Autoplay, Pagination } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/pagination';
-
-// Import Swiper styles if you haven't done it already
-import 'swiper/css';
-
-// Import Swiper JS
-import Swiper from 'swiper';
-
-// Import Swiper styles
-import 'swiper/css/swiper.min.css';
-
-// Configure Swiper to use modules
-SwiperCore.use([Autoplay, Pagination]);
-
+SwiperCore.use([Autoplay]);
 const Project = () => {
   return (
     <section id="project">
@@ -42,12 +30,10 @@ const Project = () => {
                 </div>
               </div>
             </SwiperSlide>
-            {/* Add more SwiperSlides here */}
           </Swiper>
         </div>
       </div>
     </section>
   );
 };
-
 export default Project;
