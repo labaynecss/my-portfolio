@@ -6,7 +6,7 @@ import { Skills } from "./components/Skills";
 
 import { Contact } from "./components/Contact";
 
-import { Footer } from "./Components/Footer";
+import { Footer } from "./components/Footer";
 import Project from "./components/Project";
 const App = () => {
   return (
