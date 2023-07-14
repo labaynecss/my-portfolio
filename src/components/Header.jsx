@@ -17,10 +17,10 @@ export const Header = () => {
   window.addEventListener("scroll", changeBg);
   return (
     <header className={navbar ? "header active" : "header"}>
-      <div className="container mx-auto h-7 flex  pr-2 items-center justify-center lg:justify-between">
+      <div className="container mx-auto h-auto flex  pr-1 items-center justify-center lg:justify-between">
         <img
           src={name}
-          className="   w-20 hidden md:block lg:block shadow-[0_4px_3px_-4px_#6699CC]"
+          className="   w-[60px] relative  -left-8 hidden md:block lg:block shadow-[0_4px_3px_-4px_#6699CC]"
         />
         <img src={logo} className="w-12 pr-3 lg:hidden md:hidden sm:block" />
         <NavBar />

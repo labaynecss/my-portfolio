@@ -19,8 +19,8 @@ export const About = () => {
             className="w-full lg:w-1/2 h-auto rounded-lg shadow-[8px_8px_9px_-6px_#6699CC]  mb-8 md:mb-0 cursor-pointer filter grayscale hover:grayscale-0 hover:pointer-up duration-200"
           />
           <div className="flex-1 flex flex-col justify-center items-center md:items-start md:text-left">
-            <div className="flex flex-col mb-[6rem]">
-              <h2 className="text-3xl lg:4xl font-medium lg:font-extrabold mb-2 text-primary ">
+            <div className="flex flex-col mb-[6rem] ">
+              <h2 className="text-3xl lg:4xl font-medium lg:font-extrabold mb-4 text-primary ">
                 Who I Am
               </h2>
               <p className="mb-4 text-accent text-center sm:text-left  text-[#6699CC] ">
@@ -29,7 +29,7 @@ export const About = () => {
               <p className="mb-8 text-center sm:text-left  text-2xl    text-gray-700">
                 I'm currently looking for entry-level position that suits my
                 skills. I prefer to keep learning, I am very passionate about
-                improving my coding skills & developing websites
+                improving my coding skills & developing web applications.
                 <br />
                 Coding gives me a wonderful feeling of achievement and joy which
                 I cannot explain in words.

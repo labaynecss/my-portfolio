@@ -35,13 +35,13 @@
     @apply resize-none w-full outline-none p-6 rounded-sm h-[200px] focus:outline focus:outline-1 border-gray-300 border-2;
   }
   .header {
-    @apply items-center fixed top-0 w-full text-blue-100 z-10 h-[80px] flex;
+    @apply items-center fixed top-0 w-full text-blue-100 z-50 h-[75px]  flex;
   }
   .navbar {
     @apply bg-transparent;
   }
   .active {
-    @apply shadow-[#6699CC] shadow-md px-2 rounded-md;
+    @apply px-2 border-b-[2px] border-[#6699CC]  shadow-[#6699CC];
   }
 }
 
@@ -183,4 +183,27 @@
 html {
   scroll-behavior: smooth;
   background-color: white;
+}
+
+.swiper-slide {
+  /* text-align: center; */
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hide {
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
 }
