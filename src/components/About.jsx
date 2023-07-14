@@ -1,13 +1,14 @@
-import React from 'react';
-import person from '../assets/img/person.png';
-import { motion } from 'framer-motion';
+import React from "react";
+import person from "../assets/img/person.png";
+import { motion } from "framer-motion";
 
 export const About = () => {
   return (
     <section id="about" className=" bg-white   ">
       <motion.div
         className="container  mx-auto mt-[40rem] md:mt-[45rem] sm:mt-[60rem] mb-[5rem] "
-        initial={{}}>
+        initial={{}}
+      >
         <h1 className="px-1  uppercase text-xl tracking-widest text-[#6699CC] py-4">
           About
         </h1>
@@ -34,7 +35,7 @@ export const About = () => {
                 I cannot explain in words.
               </p>
               <span>
-                <button className=" inline-flex gap-2 shadow-[0_4px_9px_-4px_#6699CC]  bg-[#6699CC] rounded border-2 border-[#6699CC] px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal text-gray-100 transition duration-150 ease-in-out hover:border-[#6699CC] hover:bg-neutral-500 hover:bg-opacity-10 hover:text-primary-purple-700 focus:border-primary-600 focus:text-sky-600 focus:outline-none focus:ring-0 active:border-primary-700 active:text-primary dark:hover:bg-neutral-100 dark:hover:bg-opacity-10">
+                <button className=" inline-flex gap-2 shadow-[0_4px_9px_-4px_#6699CC]  bg-[#6699CC] rounded border-2 border-[#6699CC] px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal text-black transition duration-150 ease-in-out hover:border-[#6699CC] hover:bg-neutral-500 hover:bg-opacity-10 hover:text-primary-purple-700 focus:border-primary-600 focus:text-sky-600 focus:outline-none focus:ring-0 active:border-primary-700 active:text-primary dark:hover:bg-neutral-600 dark:hover:bg-opacity-5">
                   Check My Project
                 </button>
               </span>

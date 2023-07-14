@@ -1,22 +1,22 @@
-import React, { useState } from 'react';
-import { inViewhandler } from './animationHandler';
-import { motion, useAnimation } from 'framer-motion';
-import { InView } from 'react-intersection-observer';
-import me from '../assets/img/2x2.png';
-import emailjs from 'emailjs-com';
-import { Socials } from './Socials';
+import React, { useState } from "react";
+import { inViewhandler } from "./animationHandler";
+import { motion, useAnimation } from "framer-motion";
+import { InView } from "react-intersection-observer";
+import me from "../assets/img/2x2.png";
+import emailjs from "emailjs-com";
+import { Socials } from "./Socials";
 export const Contact = () => {
-  const animation = useAnimation('');
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [subject, setSubject] = useState('');
-  const [message, setMessage] = useState('');
-  const [emailStatus, setEmailStatus] = useState('');
+  const animation = useAnimation("");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+  const [emailStatus, setEmailStatus] = useState("");
 
   const sendEmail = (e) => {
     e.preventDefault();
     if (!name || !email || !subject || !message) {
-      setEmailStatus('empty');
+      setEmailStatus("empty");
       return;
     }
     emailjs
@@ -24,32 +24,34 @@ export const Contact = () => {
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_TEMPLATE_ID,
         e.target,
-        import.meta.env.VITE_EMAIL_USER_ID,
+        import.meta.env.VITE_EMAIL_USER_ID
       )
       .then(
         (result) => {
           console.log(result.text);
-          setEmailStatus('success');
+          setEmailStatus("success");
         },
         (error) => {
           console.log(error.message);
-        },
+        }
       );
   };
   return (
     <InView onChange={(inView) => inViewhandler(inView, animation)}>
       <section
         id="contact"
-        className="max-w-[1240px] w-[95%] lg:w-full m-auto px-2 pt-5 ">
+        className="max-w-[1240px] w-[95%] lg:w-full m-auto px-2 pt-5 "
+      >
         <h1 className="px-5 pb-5 pt-2 uppercase text-xl tracking-widest text-[#6699CC] ">
           Contact
         </h1>
         <motion.div
-          className="container mx-auto   "
+          className="container mx-auto  "
           initial={{ opacity: 0, scale: 0.5 }}
-          animate={animation}>
+          animate={animation}
+        >
           <div className="flex flex-col lg:gap-x-8 lg:flex-row ">
-            <div class="flex flex-col h-[620px] lg:w-[560px]  w-auto my-5 rounded-b-md shadow-lg items-center ">
+            <motion.div class="flex flex-col h-[620px] lg:w-[560px]  w-auto my-5 rounded-b-md shadow-lg items-center ">
               <img
                 src={me}
                 alt="me"
@@ -73,11 +75,12 @@ export const Contact = () => {
               <span className="flex items-center justify-between py-4 mt-6">
                 <Socials />
               </span>
-            </div>
+            </motion.div>
             <div className="  my-5 flex flex-col justify-center h-[620px] px-4 rounded-b-md shadow-lg">
               <form
                 className="space-y-8  w-full max-w-[750px] "
-                onSubmit={sendEmail}>
+                onSubmit={sendEmail}
+              >
                 <div className="flex gap-8  ">
                   <input
                     className="input"
@@ -111,12 +114,12 @@ export const Contact = () => {
                   Send Message
                 </button>
                 <div className="email-status mt-4 ">
-                  {emailStatus === 'success' && (
+                  {emailStatus === "success" && (
                     <p className="text-fuchsia-700 "> Email Successfully ! </p>
                   )}
-                  {emailStatus === 'empty' && (
+                  {emailStatus === "empty" && (
                     <p className="text-rose-500 ">
-                      Please fill in all fields before submitting{' '}
+                      Please fill in all fields before submitting{" "}
                     </p>
                   )}
                 </div>

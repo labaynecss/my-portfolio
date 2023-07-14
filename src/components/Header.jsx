@@ -1,8 +1,8 @@
-import React from 'react';
-import { NavBar } from './NavBar';
-import { useState } from 'react';
-import logo from '../assets/img/logo.png';
-import name from '../assets/img/name.png';
+import React from "react";
+import { NavBar } from "./NavBar";
+import { useState } from "react";
+import logo from "../assets/img/logo.png";
+import name from "../assets/img/name.png";
 
 export const Header = () => {
   const [navbar, setNavBar] = useState(false);
@@ -14,10 +14,10 @@ export const Header = () => {
       setNavBar(false);
     }
   };
-  window.addEventListener('scroll', changeBg);
+  window.addEventListener("scroll", changeBg);
   return (
-    <header className={navbar ? 'header active' : 'header'}>
-      <div className="container mx-auto h-auto flex  pr-2 items-center justify-center lg:justify-between">
+    <header className={navbar ? "header active" : "header"}>
+      <div className="container mx-auto h-7 flex  pr-2 items-center justify-center lg:justify-between">
         <img
           src={name}
           className="   w-20 hidden md:block lg:block shadow-[0_4px_3px_-4px_#6699CC]"
