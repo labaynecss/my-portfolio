@@ -1,13 +1,13 @@
-import React from "react";
-import { Header } from "./components/Header";
-import { Hero } from "./components/Hero";
-import { About } from "./components/About";
-import { Skills } from "./components/Skills";
+import React from 'react';
+import { Header } from './components/Header';
+import { Hero } from './components/Hero';
+import { About } from './components/About';
+import { Skills } from './components/Skills';
 
-import { Contact } from "./components/Contact";
+import { Contact } from './components/Contact';
 
-import { Footer } from "./components/Footer";
-import Project from "./components/Project";
+import { Footer } from './components/Footer';
+import Project from './components/Project';
 const App = () => {
   return (
     <div className="bg-white">

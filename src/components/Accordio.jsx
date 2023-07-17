@@ -12,7 +12,7 @@ export const Accordio = () => {
     }
   };
   return (
-    <div className="w-full mx-auto ">
+    <div className="w-full mx-auto mt-6">
       {sections.map((section, index) => (
         <div key={index} className="mb-2">
           <button

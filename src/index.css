@@ -20,7 +20,7 @@
     @apply py-10 lg:py-16;
   }
   .section-title {
-    @apply text-3xl lg:text-4xl font-medium lg:font-extrabold py-4;
+    @apply text-3xl lg:text-4xl font-semibold lg:font-extrabold py-2;
   }
   .subtitle {
     @apply text-base  mb-16 lg:mb-24 max-w-[520px];
@@ -32,7 +32,7 @@
     @apply h-[50px] outline-none pl-10 w-full font-body text-[15px] rounded-sm focus:outline focus:outline-1 border-gray-300 border-2;
   }
   .textarea {
-    @apply resize-none w-full outline-none p-6 rounded-sm h-[200px] focus:outline focus:outline-1 border-gray-300 border-2;
+    @apply resize-none w-full outline-none p-6 rounded-sm h-[300px] focus:outline focus:outline-1 border-gray-300 border-2;
   }
   .header {
     @apply items-center fixed top-0 w-full text-blue-100 z-50 h-[75px]  flex;
@@ -64,10 +64,13 @@
   animation: bubble-pixel 2s infinite;
 }
 
-.press-start {
-  font-family: 'Press Start 2P', cursive;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
 }
-
 .bubbles {
   position: absolute;
   width: 100%;
@@ -185,25 +188,44 @@ html {
   background-color: white;
 }
 
-.swiper-slide {
-  /* text-align: center; */
-  font-size: 18px;
-  background: #fff;
+.swiper {
+  width: 100%;
+  height: 500px;
+}
 
-  /* Center slide text vertically */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 500px;
+  height: 480px;
 }
 
 .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  border-radius: 3px;
+  flex: content;
 }
 
 .hide {
   transform: translateY(-100%);
   transition: transform 0.3s ease-in-out;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #6699cc;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
 }

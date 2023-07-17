@@ -62,12 +62,12 @@ export const sections = [
   {
     title: 'Backend Developer ',
     content:
-      'I have experience developing backends using Express, Node.js, and SQL databases such as PostgreSQL and no-SQL databases such as MongoDB.',
+      'I have experience developing backends using Express, Node.js, and SQL  and no-SQL databases.',
   },
   {
     title: 'Web Design ',
     content:
-      'Another functional tool which permits control over elements and words. The result can be copied or downloaded in plain text or HTML.',
+      'I have hands-on experience in web design, having worked on multiple projects to create visually captivating and user-friendly web-app.',
   },
   {
     title: 'Frontend Developer',
