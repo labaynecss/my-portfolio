@@ -51,7 +51,7 @@ export const Hero = () => {
                     whileInView={{ x: 0, opacity: 1 }}
                     initial={{ x: -200, opacity: 0 }}
                     transition={{ duration: 0.5 }}>
-                    A React Developer
+                    A Front-end Developer
                   </motion.h1>
                   <p className="capitalize text-gray-700 pb-3 text-xs md:text-sm ">
                     Specialized in building your exceptional web applications

@@ -5,6 +5,8 @@ import {
   SiCss3,
   SiJavascript,
   SiExpress,
+  SiMysql,
+  SiPhp,
 } from 'react-icons/si';
 import { BiGitBranch } from 'react-icons/bi';
 import { AiFillHtml5, AiFillGithub } from 'react-icons/ai';
@@ -21,4 +23,6 @@ export {
   SiExpress,
   GrNode,
   AiFillGithub,
+  SiMysql,
+  SiPhp,
 };
