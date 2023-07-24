@@ -50,7 +50,14 @@ export const Contact = () => {
           initial={{ opacity: 0, scale: 0.5 }}
           animate={animation}>
           <div className="flex flex-col lg:gap-x-8 lg:flex-row ">
-            <motion.div class="flex flex-col h-[620px] lg:w-[560px]  w-auto my-5 rounded-b-md shadow-lg items-center ">
+            <motion.div
+              class="flex flex-col h-[620px] lg:w-[560px]  w-auto my-5 rounded-b-md shadow-lg items-center "
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{
+                y: 0,
+                opacity: 1,
+                transition: { duration: 0.8, delay: 0.3 },
+              }}>
               <Lottie
                 animationData={person}
                 loop={true}
@@ -75,7 +82,14 @@ export const Contact = () => {
                 <Socials />
               </span>
             </motion.div>
-            <div className="  my-5 flex flex-col justify-center h-[620px] px-4 rounded-b-md shadow-lg">
+            <motion.div
+              className="  my-5 flex flex-col justify-center h-[620px] px-4 rounded-b-md shadow-lg"
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{
+                y: 0,
+                opacity: 1,
+                transition: { duration: 0.8, delay: 0.5 },
+              }}>
               <form
                 className="space-y-8  w-full max-w-[750px] "
                 onSubmit={sendEmail}>
@@ -122,7 +136,7 @@ export const Contact = () => {
                   )}
                 </div>
               </form>
-            </div>
+            </motion.div>
           </div>
         </motion.div>
       </section>

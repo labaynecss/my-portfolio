@@ -33,7 +33,7 @@ export const Hero = () => {
         </div>
         <div className="container mx-auto h-screen flex justify-center ">
           <motion.div className="context-wrapper flex items-center ">
-            <div className="flex pt-[5rem]">
+            <div className="flex -pt-[10rem] md:pt-[5rem]">
               <div className="flex flex-col items-center lg:item-center text-lg ">
                 <div className="text-content text-center  ">
                   <motion.p className="capitalize text-xs md:text-sm  text-gray-700 ">

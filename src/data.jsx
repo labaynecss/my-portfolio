@@ -34,25 +34,25 @@ export const navigation = [
 export const social = [
   {
     icon: <AiOutlineFacebook />,
-    href: 'https://www.youtube.com/channel/UC6duY9-fOnOn42zHRlSaP-g',
+    href: 'https://www.facebook.com/carl.thestar',
     color: 'text-gray-800',
     colorHover: 'hover:text-[#6699CC]',
   },
   {
     icon: <AiFillInstagram />,
-    href: 'https://twitter.com/GHarakis',
+    href: 'https://www.instagram.com/c.labayne/',
     color: 'text-gray-800',
     colorHover: 'hover:text-[#6699CC]',
   },
   {
     icon: <AiOutlineLinkedin />,
-    href: 'https://github.com/harakisgeorge',
+    href: 'https://www.linkedin.com/in/carl-louis-c-labayne-93377a228/',
     color: 'text-gray-800',
     colorHover: 'hover:text-[#6699CC]',
   },
   {
     icon: <AiFillGithub />,
-    href: 'https://www.linkedin.com/feed/',
+    href: 'https://github.com/labaynecss',
     color: 'text-gray-800',
     colorHover: 'hover:text-[#6699CC]',
   },
