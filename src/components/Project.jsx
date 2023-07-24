@@ -65,7 +65,7 @@ export default function Project() {
                 </div>
                 <div className="absolute top-0 w-full h-full   mix-blend-overlay z-[-1]"></div>
                 <div className="relative  top-[165px] p-20">
-                  <a href="https://katchat.vercel.app/">
+                  <a href="https://lnc-manufacturer.vercel.app/">
                     <button className="relative -top-[120px] left-[120px] inline-flex md:flex-1 shadow-[0_4px_9px_-4px_#6699CC]  bg-[#6699CC] rounded border-2 border-[#6699CC] px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal text-gray-100 transition duration-150 ease-in-out hover:border-[#6699CC] hover:bg-neutral-500 hover:bg-opacity-10 hover:text-black focus:border-primary-600 focus:text-primary focus:outline-none focus:ring-0 active:border-primary-700 active:text-black dark:hover:bg-neutral-100 dark:hover:bg-opacity-20">
                       Visit Site
                     </button>
